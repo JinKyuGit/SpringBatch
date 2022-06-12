@@ -9,11 +9,12 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
 import com.java.main.batch.job.ExampleJobConfig;
 import com.java.main.batch.job.MultiStepJobConfig;
 import com.java.main.batch.job.ReaderWriterJobConfig;
 
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
 @Component
 public class BatchScheduler {
 	
@@ -39,11 +40,11 @@ public class BatchScheduler {
 		try {
 			jobLauncher.run(exampleJobConfig.ExampleJob(), jobParamaters);
 		} catch (Exception e) {
-			
+		    log.error("error :::"+e.getMessage());
 		}
 	}
 	
-	//@Scheduled(cron = "45 * * * * *")
+	@Scheduled(cron = "45 * * * * *")
 	public void runJob2() {
 		
 		Map<String, JobParameter> confMap = new HashMap<>();
@@ -53,7 +54,7 @@ public class BatchScheduler {
 		try {
 			jobLauncher.run(multiStepJobConfig.MultiStepJob(), jobParamaters);
 		} catch (Exception e) {
-			
+			 log.error("error :::"+e.getMessage());
 		}
 	}
 	
@@ -67,7 +68,7 @@ public class BatchScheduler {
 		try {
 			jobLauncher.run(readerWriterJobConfig.ReaderWriterJob(), jobParamaters);
 		} catch (Exception e) {
-			
+			 log.error("error :::"+e.getMessage());
 		}
 	}
 	

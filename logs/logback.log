@@ -5643,3 +5643,331 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 [2022-06-12 21:43:55:10925][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
 [2022-06-12 21:43:55:10927][scheduling-1] INFO  o.s.batch.core.step.AbstractStep - Step: [readerWirterStep] executed in 11ms
 [2022-06-12 21:43:55:10931][scheduling-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] completed with the following parameters: [{param1=1655037835003}] and the following status: [COMPLETED] in 16ms
+[2022-06-12 23:42:32:1002][restartedMain] INFO  com.java.main.BatchApplication - Starting BatchApplication using Java 1.8.0_171 on JinKyu with PID 17680 (C:\project\repository3\batch\bin\main started by DELL in C:\project\repository3\batch)
+[2022-06-12 23:42:32:1005][restartedMain] INFO  com.java.main.BatchApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-06-12 23:42:32:1071][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-06-12 23:42:32:1071][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-06-12 23:42:33:2201][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$98f5095] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-06-12 23:42:33:2248][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2022-06-12 23:42:34:3326][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2022-06-12 23:42:34:3327][restartedMain] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+[2022-06-12 23:42:34:3327][restartedMain] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+[2022-06-12 23:42:34:3328][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+[2022-06-12 23:42:34:3328][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[2022-06-12 23:42:35:4376][restartedMain] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+[2022-06-12 23:42:35:4390][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:42:35:4391][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-06-12 23:42:35:4391][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-06-12 23:42:36:5249][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-06-12 23:42:36:5249][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4177 ms
+[2022-06-12 23:42:36:5365][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Starting...
+[2022-06-12 23:42:38:6448][restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool - Driver does not support get/set network timeout for connections. (net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.getNetworkTimeout()I)
+[2022-06-12 23:42:38:6467][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.executeSql(PoolBase.java:583)
+1. SELECT 1 FROM DUAL
+ {executed in 10 msec}
+[2022-06-12 23:42:38:6471][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Start completed.
+[2022-06-12 23:42:38:6685][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+[2022-06-12 23:42:38:6685][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No transaction manager was provided, using a ResourcelessTransactionManager
+[2022-06-12 23:42:38:6709][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+[2022-06-12 23:42:38:7224][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[2022-06-12 23:42:38:7240][restartedMain] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-06-12 23:42:38:7240][restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[2022-06-12 23:42:38:7241][restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[2022-06-12 23:42:38:7242][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-06-12 23:42:38:7242][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-06-12 23:42:38:7242][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[2022-06-12 23:42:38:7243][restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4282ab2d
+[2022-06-12 23:42:38:7316][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2022-06-12 23:42:38:7332][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:42:38:7362][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2022-06-12 23:42:38:7364][restartedMain] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[2022-06-12 23:42:38:7365][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-06-12 23:42:38:7384][restartedMain] INFO  com.java.main.BatchApplication - Started BatchApplication in 6.844 seconds (JVM running for 9.284)
+[2022-06-12 23:42:55:23457][scheduling-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] launched with the following parameters: [{param1=1655044975002}]
+[2022-06-12 23:42:55:23500][scheduling-1] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [readerWirterStep]
+[2022-06-12 23:42:55:23509][scheduling-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:169)
+1. SELECT 1 FROM DUAL
+ {executed in 4 msec}
+[2022-06-12 23:42:55:23535][scheduling-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. SELECT id, password, name, use_yn FROM ADMIN
+ {executed in 2 msec}
+[2022-06-12 23:42:55:23572][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 1
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : admin
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 이진규 
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 2
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:42:55:23573][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:42:55:23574][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:42:55:23574][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:42:55:23574][scheduling-1] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:42:55:23581][scheduling-1] INFO  o.s.batch.core.step.AbstractStep - Step: [readerWirterStep] executed in 80ms
+[2022-06-12 23:42:55:23603][scheduling-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] completed with the following parameters: [{param1=1655044975002}] and the following status: [COMPLETED] in 107ms
+[2022-06-12 23:44:11:880][restartedMain] INFO  com.java.main.BatchApplication - Starting BatchApplication using Java 1.8.0_171 on JinKyu with PID 14108 (C:\project\repository3\batch\bin\main started by DELL in C:\project\repository3\batch)
+[2022-06-12 23:44:11:884][restartedMain] INFO  com.java.main.BatchApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-06-12 23:44:11:947][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-06-12 23:44:11:948][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-06-12 23:44:12:2042][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$39cbc34b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-06-12 23:44:12:2081][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2022-06-12 23:44:13:3025][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2022-06-12 23:44:13:3027][restartedMain] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+[2022-06-12 23:44:13:3027][restartedMain] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+[2022-06-12 23:44:13:3028][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+[2022-06-12 23:44:13:3028][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[2022-06-12 23:44:14:4089][restartedMain] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+[2022-06-12 23:44:14:4099][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:44:14:4100][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-06-12 23:44:14:4100][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-06-12 23:44:14:4208][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-06-12 23:44:14:4209][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3260 ms
+[2022-06-12 23:44:14:4345][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Starting...
+[2022-06-12 23:44:15:5389][restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool - Driver does not support get/set network timeout for connections. (net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.getNetworkTimeout()I)
+[2022-06-12 23:44:15:5408][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.executeSql(PoolBase.java:583)
+1. SELECT 1 FROM DUAL
+ {executed in 11 msec}
+[2022-06-12 23:44:15:5411][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Start completed.
+[2022-06-12 23:44:16:5627][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+[2022-06-12 23:44:16:5627][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No transaction manager was provided, using a ResourcelessTransactionManager
+[2022-06-12 23:44:16:5653][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+[2022-06-12 23:44:16:6250][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[2022-06-12 23:44:16:6264][restartedMain] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-06-12 23:44:16:6264][restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[2022-06-12 23:44:16:6265][restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[2022-06-12 23:44:16:6266][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-06-12 23:44:16:6266][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-06-12 23:44:16:6267][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[2022-06-12 23:44:16:6267][restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@21b084c2
+[2022-06-12 23:44:16:6348][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2022-06-12 23:44:16:6371][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:44:16:6401][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2022-06-12 23:44:16:6403][restartedMain] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[2022-06-12 23:44:16:6403][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-06-12 23:44:16:6421][restartedMain] INFO  com.java.main.BatchApplication - Started BatchApplication in 5.958 seconds (JVM running for 6.76)
+[2022-06-12 23:44:16:6424][restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+[2022-06-12 23:44:16:6463][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exampleJob]] launched with the following parameters: [{}]
+[2022-06-12 23:44:16:6508][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [step]
+[2022-06-12 23:44:16:6523][restartedMain] INFO  c.j.main.batch.job.ExampleJobConfig - example step
+[2022-06-12 23:44:16:6538][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step] executed in 29ms
+[2022-06-12 23:44:16:6551][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exampleJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 49ms
+[2022-06-12 23:44:16:6559][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=multiStepJob]] launched with the following parameters: [{}]
+[2022-06-12 23:44:17:6567][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [firstStep]
+[2022-06-12 23:44:17:6609][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:169)
+1. SELECT 1 FROM DUAL
+ {executed in 3 msec}
+[2022-06-12 23:44:17:6636][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. /* AdminMapper.selectAdminList */
+  SELECT 
+     id
+    ,password
+    ,name
+    ,use_yn
+  FROM ADMIN
+ {executed in 3 msec}
+[2022-06-12 23:44:17:6658][restartedMain] INFO  c.j.m.batch.job.MultiStepJobConfig - admin list size :::2
+[2022-06-12 23:44:17:6667][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [firstStep] executed in 100ms
+[2022-06-12 23:44:17:6672][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Duplicate step [firstStep] detected in execution of job=[multiStepJob]. If either step fails, both will be executed again on restart.
+[2022-06-12 23:44:17:6674][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [firstStep]
+[2022-06-12 23:44:17:6677][restartedMain] INFO  c.j.m.batch.job.MultiStepJobConfig - second step!!!
+[2022-06-12 23:44:17:6680][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [firstStep] executed in 5ms
+[2022-06-12 23:44:17:6683][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=multiStepJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 121ms
+[2022-06-12 23:44:17:6685][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] launched with the following parameters: [{}]
+[2022-06-12 23:44:17:6687][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [readerWirterStep]
+[2022-06-12 23:44:17:6691][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. SELECT id, password, name, use_yn FROM ADMIN
+ {executed in 1 msec}
+[2022-06-12 23:44:17:6703][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 1
+[2022-06-12 23:44:17:6703][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : admin
+[2022-06-12 23:44:17:6703][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:44:17:6703][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 이진규 
+[2022-06-12 23:44:17:6704][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:44:17:6704][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:44:17:6705][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 2
+[2022-06-12 23:44:17:6705][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:44:17:6705][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:44:17:6705][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:44:17:6705][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:44:17:6705][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:44:17:6708][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [readerWirterStep] executed in 21ms
+[2022-06-12 23:44:17:6712][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 26ms
+[2022-06-12 23:45:10:59931][http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-06-12 23:45:10:59931][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-06-12 23:45:10:59933][http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2022-06-12 23:45:10:59962][http-nio-8090-exec-2] INFO  c.j.m.b.controller.JobController - hadle job ::: ReaderWriterJob
+[2022-06-12 23:45:10:59966][http-nio-8090-exec-2] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] launched with the following parameters: [{param1=1655045110397}]
+[2022-06-12 23:45:10:59971][http-nio-8090-exec-2] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [readerWirterStep]
+[2022-06-12 23:45:10:59974][http-nio-8090-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:169)
+1. SELECT 1 FROM DUAL
+ {executed in 3 msec}
+[2022-06-12 23:45:10:59976][http-nio-8090-exec-2] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. SELECT id, password, name, use_yn FROM ADMIN
+ {executed in 1 msec}
+[2022-06-12 23:45:10:59983][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 1
+[2022-06-12 23:45:10:59983][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : admin
+[2022-06-12 23:45:10:59983][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:45:10:59983][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 이진규 
+[2022-06-12 23:45:10:59983][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:45:10:59983][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:45:10:59983][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 2
+[2022-06-12 23:45:10:59984][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:45:10:59984][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:45:10:59984][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:45:10:59984][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:45:10:59984][http-nio-8090-exec-2] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:45:10:59985][http-nio-8090-exec-2] INFO  o.s.batch.core.step.AbstractStep - Step: [readerWirterStep] executed in 14ms
+[2022-06-12 23:45:10:59988][http-nio-8090-exec-2] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] completed with the following parameters: [{param1=1655045110397}] and the following status: [COMPLETED] in 19ms
+[2022-06-12 23:55:08:867][restartedMain] INFO  com.java.main.BatchApplication - Starting BatchApplication using Java 1.8.0_171 on JinKyu with PID 3508 (C:\project\repository3\batch\bin\main started by DELL in C:\project\repository3\batch)
+[2022-06-12 23:55:08:871][restartedMain] INFO  com.java.main.BatchApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-06-12 23:55:08:936][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-06-12 23:55:08:936][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-06-12 23:55:09:1986][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2afe1365] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-06-12 23:55:09:2021][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2022-06-12 23:55:10:3013][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2022-06-12 23:55:10:3014][restartedMain] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+[2022-06-12 23:55:10:3015][restartedMain] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+[2022-06-12 23:55:10:3015][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+[2022-06-12 23:55:10:3015][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[2022-06-12 23:55:11:4091][restartedMain] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+[2022-06-12 23:55:11:4104][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:55:11:4105][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-06-12 23:55:11:4106][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-06-12 23:55:12:4234][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-06-12 23:55:12:4235][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3298 ms
+[2022-06-12 23:55:12:4387][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Starting...
+[2022-06-12 23:55:13:5352][restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool - Driver does not support get/set network timeout for connections. (net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.getNetworkTimeout()I)
+[2022-06-12 23:55:13:5370][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.executeSql(PoolBase.java:583)
+1. SELECT 1 FROM DUAL
+ {executed in 10 msec}
+[2022-06-12 23:55:13:5374][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Start completed.
+[2022-06-12 23:55:13:5579][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+[2022-06-12 23:55:13:5579][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No transaction manager was provided, using a ResourcelessTransactionManager
+[2022-06-12 23:55:13:5605][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+[2022-06-12 23:55:13:6126][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[2022-06-12 23:55:13:6141][restartedMain] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-06-12 23:55:13:6141][restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[2022-06-12 23:55:13:6142][restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[2022-06-12 23:55:13:6143][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-06-12 23:55:13:6143][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-06-12 23:55:13:6143][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[2022-06-12 23:55:13:6143][restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@33681256
+[2022-06-12 23:55:14:6218][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2022-06-12 23:55:14:6233][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:55:14:6255][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2022-06-12 23:55:14:6257][restartedMain] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[2022-06-12 23:55:14:6257][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-06-12 23:55:14:6278][restartedMain] INFO  com.java.main.BatchApplication - Started BatchApplication in 5.825 seconds (JVM running for 6.613)
+[2022-06-12 23:55:25:870][restartedMain] INFO  com.java.main.BatchApplication - Starting BatchApplication using Java 1.8.0_171 on JinKyu with PID 4952 (C:\project\repository3\batch\bin\main started by DELL in C:\project\repository3\batch)
+[2022-06-12 23:55:25:873][restartedMain] INFO  com.java.main.BatchApplication - No active profile set, falling back to 1 default profile: "default"
+[2022-06-12 23:55:25:949][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-06-12 23:55:25:949][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-06-12 23:55:26:2013][restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8f7c4b24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2022-06-12 23:55:26:2051][restartedMain] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+[2022-06-12 23:55:27:3016][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[2022-06-12 23:55:27:3018][restartedMain] INFO  o.a.c.core.AprLifecycleListener - An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+[2022-06-12 23:55:27:3018][restartedMain] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+[2022-06-12 23:55:27:3018][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+[2022-06-12 23:55:27:3019][restartedMain] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[2022-06-12 23:55:28:4089][restartedMain] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+[2022-06-12 23:55:28:4099][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:55:28:4101][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-06-12 23:55:28:4101][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-06-12 23:55:28:4208][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-06-12 23:55:28:4209][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3259 ms
+[2022-06-12 23:55:28:4333][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Starting...
+[2022-06-12 23:55:29:5275][restartedMain] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool - Driver does not support get/set network timeout for connections. (net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.getNetworkTimeout()I)
+[2022-06-12 23:55:29:5293][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.executeSql(PoolBase.java:583)
+1. SELECT 1 FROM DUAL
+ {executed in 11 msec}
+[2022-06-12 23:55:29:5297][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool - Start completed.
+[2022-06-12 23:55:29:5496][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+[2022-06-12 23:55:29:5497][restartedMain] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No transaction manager was provided, using a ResourcelessTransactionManager
+[2022-06-12 23:55:29:5521][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+[2022-06-12 23:55:30:6073][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+[2022-06-12 23:55:30:6092][restartedMain] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-06-12 23:55:30:6092][restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+[2022-06-12 23:55:30:6093][restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+[2022-06-12 23:55:30:6094][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-06-12 23:55:30:6095][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-06-12 23:55:30:6095][restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+[2022-06-12 23:55:30:6095][restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@510b8a04
+[2022-06-12 23:55:30:6171][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2022-06-12 23:55:30:6187][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[2022-06-12 23:55:30:6212][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+[2022-06-12 23:55:30:6214][restartedMain] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+[2022-06-12 23:55:30:6214][restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-06-12 23:55:30:6232][restartedMain] INFO  com.java.main.BatchApplication - Started BatchApplication in 5.77 seconds (JVM running for 6.565)
+[2022-06-12 23:55:30:6235][restartedMain] INFO  o.s.b.a.b.JobLauncherApplicationRunner - Running default command line with: []
+[2022-06-12 23:55:30:6273][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exampleJob]] launched with the following parameters: [{}]
+[2022-06-12 23:55:30:6311][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [step]
+[2022-06-12 23:55:30:6321][restartedMain] INFO  c.j.main.batch.job.ExampleJobConfig - example step
+[2022-06-12 23:55:30:6330][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [step] executed in 19ms
+[2022-06-12 23:55:30:6338][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exampleJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 33ms
+[2022-06-12 23:55:30:6340][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=multiStepJob]] launched with the following parameters: [{}]
+[2022-06-12 23:55:30:6344][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [firstStep]
+[2022-06-12 23:55:30:6370][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.PoolBase.isConnectionAlive(PoolBase.java:169)
+1. SELECT 1 FROM DUAL
+ {executed in 2 msec}
+[2022-06-12 23:55:30:6393][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. /* AdminMapper.selectAdminList */
+  SELECT 
+     id
+    ,password
+    ,name
+    ,use_yn
+  FROM ADMIN
+ {executed in 2 msec}
+[2022-06-12 23:55:30:6425][restartedMain] INFO  c.j.m.batch.job.MultiStepJobConfig - admin list size :::2
+[2022-06-12 23:55:30:6434][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [firstStep] executed in 90ms
+[2022-06-12 23:55:30:6440][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Duplicate step [firstStep] detected in execution of job=[multiStepJob]. If either step fails, both will be executed again on restart.
+[2022-06-12 23:55:30:6443][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [firstStep]
+[2022-06-12 23:55:30:6445][restartedMain] INFO  c.j.m.batch.job.MultiStepJobConfig - second step!!!
+[2022-06-12 23:55:30:6449][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [firstStep] executed in 6ms
+[2022-06-12 23:55:30:6453][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=multiStepJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 110ms
+[2022-06-12 23:55:30:6457][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] launched with the following parameters: [{}]
+[2022-06-12 23:55:30:6459][restartedMain] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [readerWirterStep]
+[2022-06-12 23:55:30:6462][restartedMain] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. SELECT id, password, name, use_yn FROM ADMIN
+ {executed in 1 msec}
+[2022-06-12 23:55:30:6473][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 1
+[2022-06-12 23:55:30:6473][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : admin
+[2022-06-12 23:55:30:6473][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:55:30:6473][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 이진규 
+[2022-06-12 23:55:30:6474][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:55:30:6474][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:55:30:6474][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data count : 2
+[2022-06-12 23:55:30:6475][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:55:30:6475][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : 1234
+[2022-06-12 23:55:30:6475][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : test
+[2022-06-12 23:55:30:6475][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - data : Y
+[2022-06-12 23:55:30:6475][restartedMain] INFO  c.j.m.b.job.ReaderWriterJobConfig - ===================
+[2022-06-12 23:55:30:6478][restartedMain] INFO  o.s.batch.core.step.AbstractStep - Step: [readerWirterStep] executed in 19ms
+[2022-06-12 23:55:30:6481][restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=readerWriterJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 23ms
